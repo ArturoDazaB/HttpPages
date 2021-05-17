@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--==============================================================================-->
+<!--==============================================================================-->
+<!--EL ELEMENTO "head" CONTIENE INFORMACION ACERCA DE EL DOCUMENTO HTML TAL COMO: -->
+<!--	TITLE: DEFINE EL TITULO DEL DOCUMENTO ACTVO 
+			STYLE: DEFINE LA INFORMACION DE ESTILOS PARA LOS ELEMENTOS DE UNA DOCUMENTO
+				   HTML
+			LINK: DEFINE LA RELACION ENTRE EL DOCUMENTO ACTIVO Y FUENTES EXTERNAS
+			META: ELEMENTO USADO PARA ESPECIFICAR:
+				-charset: COLECCION DE CARACTERES USADO EN UN LENGUAJE. EX: 
+						  <meta charset="UTF-8">
+				-descripcion de la pagina
+				-palabras claves o keywords (for search engines)
+				-author-->
+
+<!--LINKs: https://www.w3.org/TR/html401/struct/global.html#h-7.5.1 
+		   https://www.w3schools.com/html/html_head.asp -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--==============================================================================-->
+    <!--==============================================================================-->
+    <!--TITULO DE LA PAGINA-->
+    <!--EL TITULO INDIVIDUAL DE CADA UNA DE LAS PAGINAS SE DEFINIRA Y PRESENTARA EN EL 
+                EL ESPACIO DEFINIDO POR EL TEMPLATE TAG "bloc" denominado "title".-->
+    <title> Portafolio | Mi web personal</title>
+
+    <!--ESTILO DE LOS ELEMENTOS HTML-->
+    <!--LINKs: https://www.w3schools.com/html/html_styles.asp -->
+    <style>
+        body {
+            background-color: #d6f7ffcc;
+        }
+
+        h1 {
+            font-family: 'Courier New', monospace;
+            color: black;
+            text-align: center;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Courier New', monospace;
+            color: black;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: justify;
+        }
+
+        li {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--CABECERA Y MENU-->
+    <h1>Bienvenido a mi web personal</h1>
+
+    <hr />
+
+    <p>Navegar:</p>
+
+    <ul>
+        <!--==============================================================================-->
+        <!--==============================================================================-->
+        <!--SE DEFINEN LOS LINKS HACIENDO USO DEL TEMPLATE TAG "url". ESTE TAG NOS PERMITE
+            HACER REFERENCIA DIRECTAMENTE A UNA FUNCION VIEW, DEFINIDA EN EL DOCUMENTO
+            "webpersonal/webpersonal/urls.py" (EL CUAL ES EL DOCUMENTO QUE ADMINISTRA Y 
+            CONTROLA LAS DIRECCIONES URL Y LAS VIEWS ASOCIADAS A ESTAS), DESDE NUESTROS
+            TEMPLATES Y ES LA FORMA CORRECTA DE ESCRIBIR ENLACES RELATIVOS DENTRO DE 
+            NUESTRA PAGINA WEB.-->
+        <li><a href="C:\Users\cdaza\HttpPages\Pages\home.html">Pagina Princial</a></li>
+
+        <li><a href="C:\Users\cdaza\HttpPages\Pages\about.html">Acerca de</a></li>
+
+        <li><a href="C:\Users\cdaza\HttpPages\Pages\contact.html">Contacto</a></li>
+
+        <li><a href="C:\Users\cdaza\HttpPages\Pages\portfolio.html">Portafolio</a></li>
+    </ul>
+
+    <hr />
+
+    <p>Algunos de los trabajos que he realizado...
+        lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet
+        pariatur voluptates odit, fuga atque ea nobis sit soluta odio. Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
+
+</body>
+
+</html>
