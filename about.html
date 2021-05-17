@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<!--==============================================================================-->
+<!--==============================================================================-->
+<!--CABECERA-->
+<!--LA CABECERA SE HEREDARA DESDE LA PLANTILLA BASE "core/base.html" MEDIANTE EL USO
+	DE "Template tags" o "tags de etiqueta" LOS CUALES SIRVEN PARA AÑADIR LOGICA DE 
+	PROGRAMACION DENTRO DEL PROPIO HTML.
+
+	EN ESTE CASO EL TEMPLATE TAG "extends" SIRVE PARA HEREDAR DESDE OTRO DOCUMENTO
+	HTML EL CONTENIDO QUE ESTE.-->
+    {% extends 'core/base.html' %}
+
+<!--==============================================================================-->
+<!--==============================================================================-->
+<!--TITULO DE LA PAGINA-->
+<!--EL TITULO INDIVIDUAL DE CADA UNA DE LAS PAGINAS DEBE ENCONTRARSE ANIDADO DENTRO
+    DEL TEMPLATE TAG "block". ESTO PARA QUE TOME EL CONTENIDO HTML DEL DOCUMENTO 
+    DEFINIDO EN EL BLOQUE "extends" E INTERSTE EL "contenido" DENTRO DEL TAG "block"
+    DEFINIDO EN EL DOCUMENTO "core/base.html".-->
+{% block title %} Acerca de {% endblock %}
+
+<!--==============================================================================-->
+<!--==============================================================================-->
+<!--CONTENIDO-->
+<!--EL CONTENIDO INDIVIDUAL DE CADA UNA DE LAS PAGINAS DEBE ENCONTRARSE ANIDADO 
+	DENTRO DEL TEMPLATE TAG "block". ESTO PARA QUE TOME EL CONTENIDO HTML DEL 
+	DOCUMENTO DEFINIDO EN EL BLOQUE "extends" E INTERSTE EL "contenido" DENTRO DEL
+	TAG "block" DEFINIDO EN EL DOCUMENTO "core/base.html".-->
+{% block content %}
+
+<h2>Acerca de mi: </h2>
+
+<p>Nacido en la ciudad de San Cristobal Venezuela el 3 de junio de 1996...tempor incididunt
+    ut labore et dolore magna aliqua. Quis hendrerit dolor magna eget est lorem ipsum dolor sit.
+    Massa massa ultricies mi quis hendrerit dolor magna eget. Lectus urna duis convallis convallis
+    tellus id. Parturient montes nascetur ridiculus mus mauris. Quisque id diam vel quam elementum
+    pulvinar etiam non. Tortor consequat id porta nibh venenatis. Amet mauris commodo quis imperdiet
+    massa tincidunt nunc pulvinar. Purus faucibus ornare suspendisse sed nisi. Pellentesque pulvinar
+    pellentesque habitant morbi tristique senectus. Leo duis ut diam quam nulla. Nibh praesent
+    tristique magna sit amet. Id ornare arcu odio ut. Sem fringilla ut morbi tincidunt augue interdum
+    velit. Purus in mollis nunc sed id semper risus in hendrerit. In pellentesque massa placerat
+    duis ultricies lacus sed turpis tincidunt. Pellentesque habitant morbi tristique senectus et
+    netus et malesuada fames. Urna cursus eget nunc scelerisque viverra mauris in. Venenatis a
+    condimentum vitae sapien pellentesque habitant morbi tristique senectus. Malesuada
+    pellentesque elit eget gravida cum.</p>
+
+{% endblock %}
+
+</html>
